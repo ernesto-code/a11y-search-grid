@@ -1,0 +1,76 @@
+* {
+            font-family: Roboto;
+        }
+
+        *:focus {
+            outline: black 2px dotted;
+            outline-offset: -2px;
+        }
+
+        .search-panel {
+            padding: 2vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            padding: 0.5vw;
+            background-color: blue;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+        #search-result {
+            margin-top: 2vh;
+            color: #222227;
+            font-size: 18px;
+        }
+
+        .container {
+            padding: 1.5vw;
+            border: #777777 thin solid;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            margin: 0;
+            padding: 1vw 2vw;
+        }
+
+        td {
+            border: #707070 thin solid
+        }
+
+        th {
+            background-color: black;
+            color: white;
+        }
+
+        caption {
+            text-align: left;
+            padding-bottom: 2vw;
+            font-size: 2em
+        }
+
+        .heading {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        li {
+            margin-top: 2vh
+        }
