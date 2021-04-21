@@ -16,65 +16,72 @@
 </head>
 
 <body>
-    <div class="search-panel">
-        <div>
-            <p class="container">By pressing the <strong>Search</strong> button you are fetching data and the results
-                will be shown in a grid. The ammount of results will be adjusted from 0 to 10 items. The reason of this
-                example
-                is to illustrate how aria-live attribute works when fetching data, and announcing the results to Screen
-                Reader
-                users.</p>
-            <button onclick="searchButtonClick()">
-                <span id="btn-text">Search</span>
-            </button>
-            <span id="alert" role="alert"></span>
-            <div id="search-result" aria-live="polite"></div>
+    <main>
+        <div class="search-panel">
+            <div>
+                <p class="container">By pressing the <strong>Search</strong> button you are fetching data and the
+                    results
+                    will be shown in a grid. The ammount of results will be adjusted from 0 to 10 items. The reason of
+                    this
+                    example
+                    is to illustrate how aria-live attribute works when fetching data, and announcing the results to
+                    Screen
+                    Reader
+                    users.</p>
+                <button onclick="searchButtonClick()">
+                    <span id="btn-text">Search</span>
+                </button>
+                <span id="alert" role="alert"></span>
+                <div id="search-result" aria-live="polite"></div>
+            </div>
         </div>
-    </div>
-    <div class="results" style="display:flex;flex-direction: column;padding:0 2.5vw 2.5vw 2.5vw ">
+        <div class="results" style="display:flex;flex-direction: column;padding:0 2.5vw 2.5vw 2.5vw ">
 
-        <div>
-            <table>
-                <caption>Posts</caption>
-                <thead>
-                    <tr>
-                        <th>User id</th>
-                        <th>Post id</th>
-                        <th>Title</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody id="table-body">
+            <div>
+                <table>
+                    <caption>Posts</caption>
+                    <thead>
+                        <tr>
+                            <th>User id</th>
+                            <th>Post id</th>
+                            <th>Title</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="margin-top: 5.5vh;">
+                <div class="heading">Keyboard interactions:</div>
+                <ul>
+                    <li><strong>Right Arrow:</strong> Moves focus one cell to the right. If focus is on the right-most
+                        cell
+                        in
+                        the row, focus
+                        does not move.
+                    </li>
+                    <li><strong>Left Arrow:</strong> Moves focus one cell to the left. If focus is on the left-most cell
+                        in
+                        the
+                        row, focus
+                        does not move.</li>
+                    <li><strong>Down Arrow:</strong> Moves focus one cell down. If focus is on the bottom cell in the
+                        column,
+                        focus does not
+                        move.</li>
+                    <li><strong>Up Arrow:</strong> Moves focus one cell Up. If focus is on the top cell in the column,
+                        focus
+                        does not move.
+                    </li>
+                    <li><strong>Home:</strong> moves focus to the first cell in the row that contains focus.</li>
+                    <li><strong>End: </strong> moves focus to the last cell in the row that contains focus.</li>
+                </ul>
+            </div>
         </div>
-
-        <div style="margin-top: 5.5vh;">
-            <div class="heading">Keyboard interactions:</div>
-            <ul>
-                <li><strong>Right Arrow:</strong> Moves focus one cell to the right. If focus is on the right-most cell
-                    in
-                    the row, focus
-                    does not move.
-                </li>
-                <li><strong>Left Arrow:</strong> Moves focus one cell to the left. If focus is on the left-most cell in
-                    the
-                    row, focus
-                    does not move.</li>
-                <li><strong>Down Arrow:</strong> Moves focus one cell down. If focus is on the bottom cell in the
-                    column,
-                    focus does not
-                    move.</li>
-                <li><strong>Up Arrow:</strong> Moves focus one cell Up. If focus is on the top cell in the column, focus
-                    does not move.
-                </li>
-                <li><strong>Home:</strong> moves focus to the first cell in the row that contains focus.</li>
-                <li><strong>End: </strong> moves focus to the last cell in the row that contains focus.</li>
-            </ul>
-        </div>
-    </div>
-
+    </main>
     <script src="main.js"></script>
 </body>
 
