@@ -21,7 +21,7 @@ const fillTable = (tableBody, arr) => {
                 <td role="gridcell">
                     <div role="application">
                         <button tabindex="-1" aria-roledescription="grid button" onkeydown="buttonKeydownHandler(event)" 
-                        onclick='btnClickHandler(event)'>Data ${post.id}</button> 
+                        onclick='btnClickHandler(event)' aria-label="data ${post.id}">Data ${post.id}</button> 
                     </div>
                 </td>`
 
