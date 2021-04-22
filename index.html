@@ -36,7 +36,6 @@
             </div>
         </div>
         <div class="results" style="display:flex;flex-direction: column;padding:0 2.5vw 2.5vw 2.5vw ">
-
             <div>
                 <table>
                     <caption>Posts</caption>
@@ -49,7 +48,16 @@
                         </tr>
                     </thead>
                     <tbody id="table-body">
-
+                        <td tabindex="-1" role="gridcell" onkeydown='cellKeydownHandler(event)'>1</td>
+                        <td tabindex="-1" role="gridcell" onkeydown='cellKeydownHandler(event)'>1</td>
+                        <td tabindex="-1" role="gridcell" onkeydown='cellKeydownHandler(event)'>My new post</td>
+                        <td role="gridcell">
+                            <div role="application">
+                                <button tabindex="-1" aria-roledescription="grid button"
+                                    onkeydown="buttonKeydownHandler(event)" onclick='btnClickHandler(event)'
+                                    aria-label="data1">Data 1</button>
+                            </div>
+                        </td>`
                     </tbody>
                 </table>
             </div>
