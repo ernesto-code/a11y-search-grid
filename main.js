@@ -47,7 +47,9 @@ const fetchData = async () => {
 
     // Ensuring the search button announcement
     searchButton.blur()
+    console.log("Button Blured!")
     searchButton.focus()
+    console.log("Button Focused!")
 
     posts = resp.data.slice(0, randomNumber())
     console.log(posts)
