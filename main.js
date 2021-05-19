@@ -43,13 +43,16 @@ const fetchData = async () => {
     const resp = await axios.get('https://jsonplaceholder.typicode.com/posts');
     console.log("Done!")
     alert.innerHTML = ""
-    btnText.innerHTML = "Search 1"
+    btnText.innerHTML = "Search"
 
     // Ensuring the search button announcement
     searchButton.blur()
     console.log("Button Blured!")
-    searchButton.focus()
-    console.log("Button Focused!")
+    setTimeout(() => {
+        searchButton.focus()
+        console.log("Button Focused!")
+
+    }, 1000)
 
     posts = resp.data.slice(0, randomNumber())
     console.log(posts)
