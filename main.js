@@ -3,6 +3,7 @@ const btnText = document.querySelector("#btn-text")
 const alert = document.querySelector("#alert")
 const searchResult = document.querySelector("#search-result")
 const tableBody = document.querySelector("#table-body")
+const searchButton = document.querySelector("#search-button")
 
 const randomNumber = () => {
     return Math.floor(Math.random() * 10);
@@ -44,10 +45,17 @@ const fetchData = async () => {
     alert.innerHTML = ""
     btnText.innerHTML = "Search"
 
+    // Ensuring the search button announcement
+    searchButton.blur()
+    searchButton.focus()
+
     posts = resp.data.slice(0, randomNumber())
     console.log(posts)
     let postCount = posts.length
     searchResult.innerHTML = `${postCount} results found`
+
+
+
     fillTable(tableBody, posts)
 }
 
