@@ -43,7 +43,7 @@ const fetchData = async () => {
     const resp = await axios.get('https://jsonplaceholder.typicode.com/posts');
     console.log("Done!")
     alert.innerHTML = ""
-    btnText.innerHTML = "Search"
+    btnText.innerHTML = "Search 1"
 
     // Ensuring the search button announcement
     searchButton.blur()
@@ -55,8 +55,6 @@ const fetchData = async () => {
     console.log(posts)
     let postCount = posts.length
     searchResult.innerHTML = `${postCount} results found`
-
-
 
     fillTable(tableBody, posts)
 }
